@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Duban Perez</title>
-    <link rel="icon" href="assets/icons/logo.jpg" type="image/png">
+    <title>Portafolio - DonkaDev</title>
+    <link rel="icon" href="assets/icons/donka.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <div id="preloader">
@@ -16,25 +17,39 @@
 <div id="particles-js"></div>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
+        <nav class="modern-nav">
+            <div class="logo">
+                <a href="#inicio">DonkaDev</a>
+            </div>
+            <ul id="principal" class="nav-links">
+                <li><a href="#about" class="active">Sobre mí</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-        <div class="container">
-            <h1><i class="fa fi-sr-user"></i> Duban Perez</h1>
-            <p>Programador Junior Bases de Datos, Python y Creación de Aplicaciones</p>
-            <a href="#contact" class="btn">Contáctame</a>
+        <section id="inicio" class="section fade-in">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeInDown">DonkaDev</h1>
+                <p class="animate__animated animate__fadeInUp">Programador Junior Bases de Datos, Python y Creación de Aplicaciones</p>
+                <a href="#contact" class="btn">Contáctame</a>
         </div>
     </header>
     <main>
-        <section id="about" class="section fade-in parallax" style="background-image: url('assets/images/about-bg.jpg');">
+        <section id="about" class="section fade-in parallax" style="background-image: url('assets/icons');">
             <div class="container">
-                <h2><i class="fi fi-sr-info"></i>Sobre mí</h2>
-                <p>Hola, soy Duban Perez, me apasiona trabajar con bases de datos y desarrollar aplicaciones utilizando Python.</p>
+                <h2><img src="assets/icons/interrogatorio.svg" alt="YouTube" style="width: 30px; vertical-align: middle;"> Sobre Mi</h2>
+                <div class="about-content">
+                    <img src="assets/icons/donka.png" alt="Foto de Duban" class="profile-photo">
+                    <p>Hola, soy DonkaDev, me apasiona trabajar con bases de datos y desarrollar aplicaciones utilizando Python.</p>
+                </div>
             </div>
         </section>
         
@@ -58,7 +73,13 @@
         <section id="projects" class="section fade-in">
             <div class="container">
                 <h2><i class="fe fi-sr-briefcase"></i> Proyectos</h2>
-                <p>Aún no tengo proyectos para mostrar, pero estoy trabajando en ello. ¡Pronto habrá más contenido aquí!</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Portafolio Personal</h3>
+                        <p>Un portafolio diseñado para mostrar mis habilidades y proyectos.</p>
+                        <a href="https://github.com/DevDonka" target="_blank" class="btn">Ver en GitHub</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="blog" class="section fade-in">
@@ -78,6 +99,31 @@
                 </div>
             </div>
         </section>
+        <section id="services" class="section bg-light fade-in">
+            <div class="container">
+                <h2><img src="assets/icons/servicios.svg" alt="YouTube" class="icon-youtube"> Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="assets/icons/navegador.svg" alt="Crear Página Web" style="width: 50px; margin-bottom: 10px;">
+                        <h3>Crear Página Web</h3>
+                        <p>Diseño y desarrollo de páginas web modernas y responsivas.</p>
+                        <a href="informacion.html" class="btn">Más Información</a>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/icons/sql-server.svg" alt="Creador de Base de Datos" style="width: 50px; margin-bottom: 10px;">
+                        <h3>Creador de Base de Datos</h3>
+                        <p>Diseño, implementación y optimización de bases de datos.</p>
+                        <a href="informacion.html" class="btn">Más Información</a>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/icons/telefono-inteligente.svg" alt="Aplicaciones" style="width: 50px; margin-bottom: 10px;">
+                        <h3>Aplicaciones</h3>
+                        <p>Desarrollo de aplicaciones personalizadas según tus necesidades.</p>
+                        <a href="informacion.html" class="btn">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact" class="section bg-light fade-in">
             <div class="container">
                 <h2>
@@ -91,7 +137,7 @@
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2025 Duban Perez. Todos los derechos reservados.</p>
+            <p>&copy; 2025 DonkaDev. Todos los derechos reservados.</p>
             <p>REDES:</p>
             <div class="social-links">
                 <a href="#" target="_blank" title="LinkedIn">

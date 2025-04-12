@@ -1,4 +1,3 @@
-
 // Scroll suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -55,6 +54,14 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navLinksc = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinksc.classList.toggle('active');
+});
+
 // Confirmación al enviar el formulario
 const contactForm = document.getElementById('contact-form');
 
